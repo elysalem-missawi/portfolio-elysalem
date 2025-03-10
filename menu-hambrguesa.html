@@ -1,32 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menú Hamburguesa Tailwind CSS (Sin JS)</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Menú Hamburguesa Mejorado</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .menu-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 3;
+    }
+
+    .menu-toggle input {
+      display: none;
+    }
+
+    .menu-icon svg {
+      transition: transform 0.3s ease;
+    }
+
+    .menu-icon rect {
+      fill: #333;
+      transition: all 0.3s ease;
+    }
+
+    #menu-checkbox:checked+.menu-icon svg {
+      transform: rotate(90deg);
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      z-index: 1;
+    }
+
+    #menu-checkbox:checked~.overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .menu {
+      position: fixed;
+      top: 0;
+      right: 0px;
+      width: 100%;
+      height: 100vh;
+      background: #f0f0f0;
+      list-style: none;
+      padding: 80px 20px;
+      transition: right 0.3s ease;
+      z-index: 2;
+    }
+
+    #menu-checkbox:checked~.menu {
+      right: 0;
+    }
+
+    .menu li a {
+      display: block;
+      padding: 15px;
+      text-decoration: none;
+      color: #333;
+      transition: background 0.3s ease;
+    }
+
+    .menu li a:hover,
+    .menu li a:focus {
+      background: #e0e0e0;
+    }
+
+    @media (min-width: 768px) {
+      
+
+      .menu-toggle {
+        display: none;
+      }
+
+      .menu {
+        position: static;
+        width: auto;
+        height: auto;
+        background: none;
+        display: flex;
+      }
+
+      .menu li {
+        margin-left: 20px;
+      }
+
+      .menu li a {
+        padding: 10px;
+      }
+    }
+  </style>
 </head>
-<body class="bg-gray-100">
 
-  <nav class="bg-white shadow">
-    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-      <a href="#" class="font-bold text-xl">Mi Sitio</a>
-
-      <a href="#menu" class="block lg:hidden">
-        <button class="flex items-center px-3 py-2 border rounded text-gray-600 border-gray-600 hover:text-gray-800 hover:border-gray-800">
-          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menú</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-        </button>
-      </a>
-
-      <div id="menu" class="hidden lg:flex lg:items-center lg:w-auto lg:block">
-        <div class="text-sm lg:flex-grow">
-          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-800 mr-4">Inicio</a>
-          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-800 mr-4">Acerca de</a>
-          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-800">Contacto</a>
-          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-800" aria-label="cerrar" >Cerrar</a>
-        </div>
-      </div>
-    </div>
-  </nav>
+<body>
+  <div class="menu-toggle">
+    <input type="checkbox" id="menu-checkbox">
+    <label for="menu-checkbox" class="menu-icon">
+      <svg viewBox="0 0 100 80" width="40" height="40">
+        <rect width="100" height="15" rx="8"></rect>
+        <rect y="30" width="100" height="15" rx="8"></rect>
+        <rect y="60" width="100" height="15" rx="8"></rect>
+      </svg>
+    </label>
+  </div>
+  <div class="overlay"></div>
+  <ul class="menu">
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Acerca de</a></li>
+    <li><a href="#">Servicios</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
 </body>
+
 </html>
