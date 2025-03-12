@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFKkMRxL8yZIcDNmgPcXVP5WaaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="...integrity hash..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>ely-salem</title>
 </head>
@@ -17,7 +17,7 @@
         <nav class="navigation">
             <a href="#services">Services</a>
             <a href="#projects">Projects</a>
-            <a href="#certificados">Certificados</a>
+            <a href="#experience">Experience</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -28,7 +28,7 @@
             <a href="#projects" class="main-btn">Ver mis proyectos</a>
             <div class="social-icons">
                 <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="·"><i class="fa-brands fa-github"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
@@ -40,40 +40,88 @@
         <div class="content">
             <div class="card">
                 <div class="icon">
-                    <i class="fas fa-edit"></i>
+                    <i class="fa-regular fa-file-word"></i>
                 </div>
                 <div class="info">
-                    <h3>Script Writing</h3>
-                    <p>Research and write scripts for different topics that can then be directly recorded for video
-                        production</p>
+                    <h3>Desarrollo de sitios web estáticos</h3>
+                    <p>Desarrollo de sitios web estáticos
+                        Diseño y desarrollo de sitios web personalizados. Adaptación a las necesidades específicas de
+                        cada cliente. Creación de sitios web visualmente atractivos.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="icon">
-                    <i class="fas fa-video"></i>
+                    <i class="fa-brands fa-google"></i>
                 </div>
                 <div class="info">
-                    <h3>Video Production</h3>
-                    <p>Record and shoot videos taking into consideration proper settings, followed by production &
-                        post-production work</p>
+                    <h3>Optimización SEO básica</h3>
+                    <p>
+                        Optimización de elementos clave para mejorar el posicionamiento. Análisis de palabras clave y
+                        estructuración de contenido. Mejora de la experiencia de usuario para favorecer el SEO.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="icon">
-                    <i class="fas fa-graduation-cap"></i>
+                    <i class="fa-solid fa-shield"></i>
                 </div>
                 <div class="info">
-                    <h3>Curriculum Development</h3>
-                    <p>Develop complete curriculums for various technical topics to produce digital transformative
-                        courses</p>
+                    <h3>Mantenimiento y actualización de sitios web</h3>
+                    <p>
+                        Mantenimiento continuo para garantizar el buen funcionamiento del sitio. Actualizaciones de
+                        contenido para mantener la información relevante. Solución de problemas técnicos que puedan
+                        surgir.</p>
                 </div>
             </div>
         </div>
     </section>
+    <section class="projects" id="projects">
+        <h2 class="title">Projects</h2>
+        <div class="content">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="img/Granel-pisura.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Script Writing & Video Production</p>
+                    <strong class="project-title">
+                        <span>Granel Pisura</span>
+                        <a href="#" class="more-details">Más detalles</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="img/Granel-pisura.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Script Writing & Video Production</p>
+                    <strong class="project-title">
+                        <span>Granel Pisura</span>
+                        <a href="#" class="more-details">Más detalles</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="img/Granel-pisura.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Script Writing & Video Production</p>
+                    <strong class="project-title">
+                        <span>Granel Pisura</span>
+                        <a href="#" class="more-details">Más detalles</a>
+                    </strong>
+                </div>
+            </div>
+        </div>
 
+    </section>
+    <!-- seccion de experience -->
+    <section class="section-tarjetas">
+        <h2 class="title">Experience</h2>
 
-    <!-- seccion de cursos -->
-    <div class="tarjetas">
+    <div class="tarjetas" id="experience">
+        
         <div class="tarjeta">
             <input type="checkbox" name="">
             <div class="cambio red">+</div>
@@ -126,156 +174,51 @@
             </div>
         </div>
     </div>
+</section>
+         
 
-
-    <section class="projects" id="projects">
-        <h2 class="title">Projects</h2>
-        <div class="content">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/work1.jpg" />
+        <section class="cards contact" id="contact">
+            <h2 class="title">Contact</h2>
+            <div class="content">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Phone</h3>
+                        <p>+602 255 156</p>
+                    </div>
                 </div>
-                <div class="project-info">
-                    <p class="project-category">Script Writing & Video Production</p>
-                    <strong class="project-title">
-                        <span>Dev Books</span>
-                        <a href="#" class="more-details">More details</a>
-                    </strong>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Email</h3>
+                        <p>missawi02@gmail.com</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <div class="info">
+                        <h3>whatsapp</h3>
+                        <p>6 66  555 44 433 3</p>
+                    </div>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/work2.jpg" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Script Writing & Video Production</p>
-                    <strong class="project-title">
-                        <span>Dev Books</span>
-                        <a href="#" class="more-details">More details</a>
-                    </strong>
-                </div>
+        </section>
+
+        <footer class="footer">
+            <p class="footer-title">Copyrights @ <span>Ely Salem</span></p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/work3.jpg" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Script Writing & Video Production</p>
-                    <strong class="project-title">
-                        <span>Dev Books</span>
-                        <a href="#" class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/work4.jpg" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Script Writing & Video Production</p>
-                    <strong class="project-title">
-                        <span>Dev Books</span>
-                        <a href="#" class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/work5.jpg" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Script Writing & Video Production</p>
-                    <strong class="project-title">
-                        <span>Dev Books</span>
-                        <a href="#" class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/work6.jpg" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Script Writing & Video Production</p>
-                    <strong class="project-title">
-                        <span>Internet</span>
-                        <a href="#" class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="certificados">
-        <h2 class="title" id="certificados">Certificados obtenidos</h2>
-
-        <div class="contenedor">
-            <div class="contenedor-certificados">
-
-                <a href="img/certificado1.png" data-lightbox="certificado" data-title="Certificado CSS - SoloLearn"><img
-                        src="img/certificado1.png" alt=""></a>
-
-                <a href="img/2.png" data-lightbox="certificado" data-title="Certificado JavaScript - SoloLearn"><img
-                        src="img/2.png" alt=""></a>
-
-                <a href="img/3.png" data-lightbox="certificado"
-                    data-title="Certificado programación básica - Platzi"><img src="img/3.png" alt=""></a>
-
-                <a href="img/certificados/desarrollo1.jpg" data-lightbox="certificado"
-                    data-title="Certificado desarrollo web 1 - Google e IEI"><img src="img/certificados/desarrollo1.jpg"
-                        alt=""></a>
-                <a href="img/1.png" data-lightbox="certificado" data-title="Certificado HTML - SoloLearn"><img
-                        src="img/1.png" alt=""></a>
-
-
-                <a href="img/4.png" data-lightbox="certificado"
-                    data-title="Certificado desarrollo web 2 - Google e IEI"><img src="img/4.png" alt=""></a>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="cards contact" id="contact">
-        <h2 class="title">Contact</h2>
-        <div class="content">
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-phone"></i>
-                </div>
-                <div class="info">
-                    <h3>Phone</h3>
-                    <p>+602 255 156</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-envelope"></i>
-                </div>
-                <div class="info">
-                    <h3>Email</h3>
-                    <p>missawi02@gmail.com</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </div>
-                <div class="info">
-                    <h3>Email</h3>
-                    <p>missawi02@gmail.com</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <p class="footer-title">Copyrights @ <span>Ely Salem</span></p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-        </div>
-    </footer>
+        </footer>
 
 </body>
 
