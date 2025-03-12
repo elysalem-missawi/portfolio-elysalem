@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>ely-salem</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    body {
+      font-family: 'EB Garamond', serif;
+    }
+
+    .bg-gray-100 {
+      background-color: #EAEAEA;
+    }
+
+    .text-blue-500 {
+      color: #3a6cf4;
+    }
+
+    .hover\:text-purple-700:hover {
+      color: #601cfc;
+    }
+
+    .bg-blue-500 {
+      background-color: #3a6cf4;
+    }
+
+    .hover\:bg-blue-700:hover {
+      background-color: #0a49f6;
+    }
+
+    .bg-gray-900 {
+      background-color: #000016;
+    }
+  </style>
+</head>
+<body class="scroll-smooth">
+  <header class="bg-gray-100 fixed w-full z-999 flex items-center justify-between px-6 py-4 md:px-40">
+    <a href="#" class="logo text-blue-500 text-2xl font-bold">Ely salem</a>
+    <nav class="navigation">
+      <a href="#services" class="text-blue-500 text-lg font-medium px-6 hover:text-purple-700">Services</a>
+      <a href="#projects" class="text-blue-500 text-lg font-medium px-6 hover:text-purple-700">Projects</a>
+      <a href="#experience" class="text-blue-500 text-lg font-medium px-6 hover:text-purple-700">Experience</a>
+      <a href="#contact" class="text-blue-500 text-lg font-medium px-6 hover:text-purple-700">Contact</a>
+    </nav>
+  </header>
+
+  <section class="main bg-cover bg-center bg-fixed bg-no-repeat" style="background-image: url(img/gafas.png)">
+    <div class="container mx-auto flex items-center min-h-screen px-6 md:px-40">
+      <div>
+        <h2 class="text-white text-xl font-medium">Hola<br><span class="text-blue-400 text-4xl font-bold block mt-2">Soy Ely Salem</span></h2>
+        <h3 class="text-white text-2xl font-bold tracking-wide mt-2 mb-6 font-montserrat">Soy Front end developer</h3>
+        <a href="#projects" class="main-btn bg-blue-500 hover:bg-blue-700 text-white text-lg font-semibold py-3 px-6 rounded-md tracking-wide transition-transform duration-700 ease-in-out hover:scale-110">Ver mis proyectos</a>
+        <div class="social-icons mt-8">
+          <a href="#" class="text-white text-2xl mr-6"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="text-white text-2xl mr-6"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="text-white text-2xl mr-6"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white text-2xl"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cards" id="services">
+    <div class="container mx-auto px-6 py-16 md:px-40">
+      <h2 class="title text-blue-500 text-3xl font-bold text-center mb-8">Services</h2>
+      <div class="content flex flex-wrap justify-center">
+        <div class="card bg-white shadow-md rounded-md p-6 m-4 transition-transform duration-700 ease-in-out hover:scale-110 w-72">
+          <div class="icon text-blue-500 text-6xl text-center mb-4">
+            <i class="fa-regular fa-file-word"></i>
+          </div>
+          <div class="info text-center">
+            <h3 class="text-blue-500 text-xl font-bold mb-2">Desarrollo de sitios web estáticos</h3>
+            <p>Diseño y desarrollo de sitios web personalizados. Adaptación a las necesidades específicas de cada cliente. Creación de sitios web visualmente atractivos.</p>
+          </div>
+        </div>
+        <div class="card bg-white shadow-md rounded-md p-6 m-4 transition-transform duration-700 ease-in-out hover:scale-110 w-72">
+          <div class="icon text-blue-500 text-6xl text-center mb-4">
+            <i class="fa-brands fa-google"></i>
+          </div>
+          <div class="info text-center">
+            <h3 class="text-blue-500 text-xl font-bold mb-2">Optimización SEO básica</h3>
+            <p>Optimización de elementos clave para mejorar el posicionamiento. Análisis de palabras clave y estructuración de contenido. Mejora de la experiencia de usuario para favorecer el SEO.</p>
+          </div>
+        </div>
+        <div class="card bg-white shadow-md rounded-md p-6 m-4 transition-transform duration-700 ease-in-out hover:scale-110 w-72">
+          <div class="icon text-blue-500 text-6xl text-center mb-4">
+            <i class="fa-solid fa-shield"></i>
+          </div>
+          <div class="info text-center">
+            <h3 class="text-blue-500 text-xl font-bold mb-2">Mantenimiento y actualización de sitios web</h3>
+            <p>Mantenimiento continuo para garantizar el buen funcionamiento del sitio. Actualizaciones de contenido para mantener la información relevante. Solución de problemas técnicos que puedan surgir.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects bg-gray-900" id="projects">
+    <div class="container mx-auto px-6 py-16 md:px-40">
+      <h2 class="title text-white text-3xl font-bold text-center mb-8">Projects</h2>
+      <div class="content flex flex-wrap justify-center mt-6">
+        <div class="project-card bg-white border border-white rounded-md overflow-hidden shadow-md m-4 transition-transform duration-700 ease-in-out hover:scale-110 w-80">
+          <div class="project-image">
+            <img src="img/Granel-pisura.png" alt="Granel Pisura">
+          </div>
+          <div class="project-info p-4">
+            <p class="project-category text-sm text-gray-600">Script Writing & Video Production</p>
+            <strong class="project-title flex items-center justify-between uppercase font-bold mt-2">
+              <span>Granel Pisura</span>
+              <a href="#" class="more-details text-blue-500 hover:text-purple-700">Más detalles</a>
+            </strong>
+          </div>
+        </div>
+        <div class="project-card bg-white border border-white rounded-md overflow-hidden shadow-md m-4 transition-transform duration-700 ease-in-out hover:scale-110 w-80">
+          <div class="project-image">
+            <img src="img/Granel-pisura.png" alt="Granel Pisura">
+          </div>
+          <div class="project-info p-4">
+            <p class="project-category text-sm text-gray-600">Script Writing & Video Production</p>
+            <strong class="project-title flex items-center justify-between uppercase font-bold mt-2">
+              <span>Granel Pisura</span>
+              <a href="#" class="more-details text-blue-500 hover:text-purple-700">Más detalles</a>
+            </strong>
+          </div>
+        </div>
+        <div class="project-card bg-white border border-white rounded-md overflow-hidden shadow-md m-4 transition-transform duration-700 ease-in-out hover:scale-110 w-80">
+          <div class="project-image">
+            <img src="img/Granel-pisura.png" alt="Granel Pisura">
+          </div>
+          <div class="project-info p-4">
+            <p class="project-category text-sm text-gray-600">Script Writing & Video Production</p>
+            <strong class="project-title flex items-center justify-between uppercase font-bold mt-2">
+              <span>Granel Pisura</span>
+              <a href="#" class="more-details text-blue-500 hover:text-purple-700">Más detalles</a>
+            </strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tarjetas">
+    <div class="container mx-auto px-6 py-16 md:px-40">
+      <h2 class="title text-blue-500 text-3xl font-bold text-center mb-8">Experience</h2>
+      <div class="tarjetas flex flex-wrap justify-center" id="experience">
+        <div class="tarjeta relative w-72 h-96 overflow-hidden m-4">
+          <input type="checkbox" name="">
+          <div class="cambio red absolute bottom-4 right-4 w-8 h-8 rounded-full bg-white text-black text-xl flex items-center justify-center shadow-md transition-transform duration-500">+
+          </div>
+          <div class="img absolute top-0 left-0 w-full h-full">
+            <img src="img/html.jpg" alt="">
+          </div>
+          <div class="detalles absolute top-0 left-0 w-full h-full p-4 z-10 pointer-events-none opacity-0 transition-opacity duration-500">
+            <h3 class="text-white text-xl font-bold text-center mb-1">HTML 5</h3>
+            <p class="text-white text-sm leading-relaxed">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid quia suscipit dolor, maxime blanditiis
+              minus, nam alias exercitationem doloremque consequuntur veritatis error totam repellendus, ex vel magnam
+              cumque nemo sit illo architecto officiis saepe quos. Dolorum eaque qui accusantium exercitationem!
+            </p>
+          </div>
+        </div>
+        <div class="tarjeta relative w-72 h-96 overflow-hidden m-4">
+          <input type="checkbox" name="">
+          <div class="cambio red absolute bottom-4 right-4 w-8 h-8 rounded-full bg-white text-black text-xl flex items-center justify-center shadow-md transition-transform duration-500">+
+          </div>
+          <div class="img absolute top-0 left-0 w-full h-full">
+            <img src="img/css.jpg" alt="">
+          </div>
+          <div class="detalles absolute top-0 left-0 w-full h-full p-4 z-10 pointer-events-none opacity-0 transition-opacity duration-500">
+            <h3 class="text-white text-xl font-bold text-center mb-1">HTML 5</h3>
+            <p class="text-white text-sm leading-relaxed">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid quia suscipit dolor, maxime blanditiis
+              minus, nam alias exercitationem doloremque consequuntur veritatis error totam repellendus, ex vel magnam
+              cumque nemo sit illo architecto officiis saepe quos. Dolorum eaque qui accusantium exercitationem!
+            </p>
+          </div>
+        </div>
+        <div class="tarjeta relative w-72 h-96 overflow-hidden m-4">
+          <input type="checkbox" name="">
+          <div class="cambio red absolute bottom-4 right-4 w-8 h-8 rounded-full bg-white text-black text-xl flex items-center justify-center shadow-md transition-transform duration-500">+
+          </div>
+          <div class="img absolute top-0 left-0 w-full h-full">
+            <img src="img/js.jpg" alt="">
+          </div>
+          <div class="detalles absolute top-0 left-0 w-full h-full p-4 z-10 pointer-events-none opacity-0 transition-opacity duration-500">
+            <h3 class="text-white text-xl font-bold text-center mb-1">HTML 5</h3>
+            <p class="text-white text-sm leading-relaxed">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid quia suscipit dolor, maxime blanditiis
+              minus, nam alias exercitationem doloremque consequuntur veritatis error totam repellendus, ex vel magnam
+              cumque nemo sit illo architecto officiis saepe quos. Dolorum eaque qui accusantium exercitationem!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cards contact bg-gray-100" id="contact">
+    <div class="container mx-auto px-6 py-16 md:px-40">
+      <h2 class="title text-blue-500 text-3xl font-bold text-center mb-8">Contact</h2>
+      <div class="content flex flex-wrap justify-center">
+        <div class="card bg-white shadow-md rounded-md p-6 m-4 w-72">
+          <div class="icon text-blue-500 text-6xl text-center mb-4">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="info text-center">
+            <h3 class="text-gray-800 text-xl font-bold mb-2">Phone</h3>
+            <p>+602 255 156</p>
+          </div>
+        </div>
+        <div class="card bg-white shadow-md rounded-md p-6 m-4 w-72">
+          <div class="icon text-blue-500 text-6xl text-center mb-4">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="info text-center">
+            <h3 class="text-gray-800 text-xl font-bold mb-2">Email</h3>
+            <p>missawi02@gmail.com</p>
+          </div>
+        </div>
+        <div class="card bg-white shadow-md rounded-md p-6 m-4 w-72">
+          <div class="icon text-blue-500 text-6xl text-center mb-4">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <div class="info text-center">
+            <h3 class="text-gray-800 text-xl font-bold mb-2">whatsapp</h3>
+            <p>6 66  555 44 433 3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer bg-gray-900 text-white py">
+    <p class="footer-title">Copyrights @ <span>Ely Salem</span></p>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+</footer>
